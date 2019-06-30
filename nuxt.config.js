@@ -33,6 +33,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios'
   ],
 
   /*
@@ -48,7 +49,9 @@ export default {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  env: {
+    QIITA_TOKEN: process.env.QIITA_TOKEN
+  },
   /*
   ** Build configuration
   */
